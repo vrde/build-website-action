@@ -22,3 +22,8 @@ jobs:
         with:
           version: 6
           run_install: true
+      
+      - name: build
+        run: |
+          pnpm i
+          pnpm build
