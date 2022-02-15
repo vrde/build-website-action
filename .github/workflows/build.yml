@@ -30,9 +30,8 @@ jobs:
         run: pnpm build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           repository-name: vrde/www-build-website-action
-          branch: main
+          branch: gh-pages
           folder: public
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
