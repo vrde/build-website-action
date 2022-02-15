@@ -30,7 +30,7 @@ jobs:
         run: pnpm build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           repository-name: vrde/www-build-website-action
           ssh-key: ${{ secrets.DEPLOY_KEY }}
