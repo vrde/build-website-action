@@ -34,5 +34,5 @@ jobs:
         with:
           repository-name: vrde/www-build-website-action
           branch: main
-          folder: .
+          folder: public
           ssh-key: ${{ secrets.DEPLOY_KEY }}
