@@ -33,4 +33,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           repository-name: vrde/www-build-website-action
+          branch: main
           ssh-key: ${{ secrets.DEPLOY_KEY }}
